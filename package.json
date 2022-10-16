@@ -1,4 +1,5 @@
 {
+  "homepage": "https://zajacHubert.github.io/my-solution",
   "name": "my-solution",
   "version": "0.1.0",
   "private": true,
@@ -12,11 +13,15 @@
     "@types/react-dom": "^18.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0",
     "react-scripts": "5.0.1",
     "typescript": "^4.8.4",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "typescript-plugin-css-modules": "^3.4.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
